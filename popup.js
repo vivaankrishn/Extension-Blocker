@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     messageElement.textContent = "Please disable 3rd party cookies";
   }, 2000);
 
-  // open cookie page
+  // cookies page
   chrome.tabs.create({
     url: 'chrome://settings/content/cookies'
   });
