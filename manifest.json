@@ -31,6 +31,11 @@
         "id": "ruleset_3",
         "enabled": true,
         "path": "rules3.json"
+      },
+      {
+        "id": "ruleset_4",
+        "enabled": true,
+        "path": "rules4.json"
       }
     ]
   }
