@@ -1,14 +1,32 @@
+let askCount = 0;
+
 document.addEventListener('DOMContentLoaded', function() {
-  const messageElement = document.getElementById('message');
+  const yesButton = document.getElementById('yes-button');
+  const noButton = document.getElementById('no-button');
 
-  // Display message after 2 seconds
-  setTimeout(function() {
-    messageElement.textContent = "Please disable 3rd party cookies";
-  }, 2000);
-
-  // cookies page
-  chrome.tabs.create({
-    url: 'chrome://settings/content/cookies'
+  yesButton.addEventListener('click', function() {
+    askCount++;
+    if (askCount <= 2) {
+      chrome.tabs.create({ url: 'chrome://settings/cookies' });
+    }
+    if (askCount >= 2) {
+      document.body.classList.add('hidden');
+    } else {
+      window.close();
+    }
   });
-  window.close();
+
+  noButton.addEventListener('click', function() {
+    askCount++;
+    if (askCount <= 2) {
+      setTimeout(function() {
+        window.location.reload();
+      }, 1000); // ask again after 1 second
+    }
+    if (askCount >= 2) {
+      document.body.classList.add('hidden');
+    } else {
+      window.close();
+    }
+  });
 });

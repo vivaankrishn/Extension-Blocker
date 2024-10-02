@@ -29,13 +29,36 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      .yes-button {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+      }
+      .yes-button:hover {
+        background-color: #e0e0e0;
+      }
+      .no-button {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+      }
+      .no-button:hover {
+        background-color: #e0e0e0;
+      }
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <img src="icon1.jpg" alt="Data Blocker Icon">
     <h1>Data Blocker</h1>
     <p>Blocks 3rd party data collection</p>
-    <p id="message"></p>
+    <p id="message">Please disable 3rd party cookies</p>
+    <button id="yes-button" class="yes-button">Yes</button>
+    <button id="no-button" class="no-button">No</button>
     <script src="popup.js"></script>
   </body>
 </html>
