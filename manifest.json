@@ -13,7 +13,7 @@
     "tabs",
     "proxy",
     "declarativeNetRequest",
-    "declarativeNetRequestFeedback",
+    "declarativeNetRequestFeedback"
   ],
   "declarative_net_request": {
     "rule_resources": [
