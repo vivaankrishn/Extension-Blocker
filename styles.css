@@ -1,0 +1,10 @@
+.no-button {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.no-button:hover {
+  background-color: #e0e0e0;
+}
