@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Vivaan Krishna Data Blocked",
+  "name": "Vivaan Krishna Data Blocker",
   "version": "1.0",
   "description": "Blocks 3rd party data collection, hopefully.",
  
@@ -31,11 +31,6 @@
         "id": "ruleset_3",
         "enabled": true,
         "path": "rules3.json"
-      },
-      {
-        "id": "ruleset_4",
-        "enabled": true,
-        "path": "rules4.json"
       }
     ]
   }
