@@ -5,7 +5,7 @@
     <style>
       body {
         width: 200px;
-        height: 100px;
+        height: 150px;
         font-family: 'Poppins', sans-serif;
         text-align: center;
         background-color: #f4f4f4;
@@ -29,11 +29,25 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      button {
+        background-color: #4CAF50;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
     </style>
   </head>
   <body>
     <img src="icon1.jpg" alt="Data Blocker Icon">
     <h1>Data Blocker</h1>
     <p>Blocks 3rd party data collection</p>
+    <button id="yes">Block Cookies</button>
+    <button id="no">Settings</button>
+    <script src="popup.js"></script>
   </body>
 </html>
